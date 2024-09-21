@@ -3,15 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
- :root{
+ /* :root{
     --primary:#ff0066
- }
+ } */
  body{
     position: relative;
     background:#ffffff;
     width: 100%;
     min-height: 100%;
-    overflow: hidden;
+    overflow: auto;
  }
 /* Header */
 .navbar-brand{
@@ -26,11 +26,66 @@
 .nav-link:hover{
     cursor: pointer;
 }
+.d-flex{
+    padding: 30px;
+    margin-left: 30px;
+}
+/* Footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 30px;
+ }
+ .footer h4{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+ }
+ footer::before{
+    content: '';
+    background: black;
+    height: 2px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+ }
+ .footer::after{
+    content: '';
+    background: black;
+    height: 2px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+ }
+ #services{
+    padding: 80px 0;
+ }
+ .service-img{
+    width: 200px;
+    margin-top: 20px;
+    align-items: center;
+ }
+ .services{
+    padding: 20px;
+ }
+ .services h5{
+     padding: 5px;
+     margin-top: 25px;
+     text-transform: uppercase;
+ }
+ .icons.logo{
+    color: brown;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+ }
 /* banner section */
 .banner{
     position: absolute;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     padding: 0 100px;
     display: flex;
     justify-content: center;
@@ -108,11 +163,11 @@
     height: 35vw;
 }
 .circle img{
-    position: absolute;
+    position: relative;
     width: 100%; 
     height: 100%;
     border-radius: 50%;
-    object-fit: cover;
+    object-fit:cover;
     object-position: center;
 }
 .circle.bg img{
@@ -219,3 +274,11 @@
     justify-content: center;
     align-items: center;
 } */
+/* About us */
+section h1{
+    font-weight: 400;
+    font-size: 4em;
+    letter-spacing: 1px;
+    margin-bottom: 150px;
+    text-align: center;
+}
